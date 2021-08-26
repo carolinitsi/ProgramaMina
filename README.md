@@ -1,6 +1,6 @@
 
 <h1 align="center">
-    <a href="https://pt-br.reactjs.org/">🔗 ProgramaMina</a>
+    <a href="https://pt-br.reactjs.org/" color="red">ProgramaMina</a>
 </h1>
 <p align="center"> ProgramaMina é um sistema para troca de conhecimentos entre mulheres da área de TI! Nele as usuárias poderão compartilhar seus conhecimentos, tirar dúvidas e ainda fazer amizade!  :computer::purple_heart:	</p>
 
