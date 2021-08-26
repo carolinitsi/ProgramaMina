@@ -1,3 +1,4 @@
+@import 'styleGuide.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap');
 
 @font-face{
@@ -34,19 +35,19 @@ html {
 body{
     margin-top:0px;
     margin-left: 0px;
-    background-color: #fffbfb85;
+    background-color: var(--branco-fundo);
 }
 h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 60px;
-    color: #222122;   
+    color: var(--preto-padrão);   
 }
 h1 span{
-    color: rgb(199, 64, 71);
+    color: var(--vermelho-padrão);
 }
 h2,h3{
     font-family: 'Montserrat', sans-serif;
-    color: gray;
+    color: var(--cinza-padrão);
     text-align: center;
 }
 .fadeIn {
@@ -73,15 +74,15 @@ h2,h3{
     border-radius: 10px 20px 30px;
     border: none;
     padding: 5px;
-    background:#222122;
-    color: rgb(248, 234, 234);
+    background:var(--preto-padrão);
+    color: var(--branco-padrão);
     width: 60px;
     height: 30px;  
     margin-top: 5%;
     transition: 1s all;
 }
 .bt_padrao:hover{
-    background:#88848a;
+    background:var(--cinza-padrão);
     cursor: pointer;
 }
 .bts_cabecalho{
@@ -139,8 +140,8 @@ h2,h3{
     width: 100%;
     border:none;
     border-radius: 20px;
-    background:#c74047;
-    color: white;
+    background:var( --vermelho-padrão);
+    color: var(--branco-padrão);
     font-family:GeosansLight-Oblique;
     font-size: 16px;
     font-weight: bold;
@@ -149,11 +150,11 @@ h2,h3{
     cursor: pointer;
 }
 .bt_padrao--grande:hover{
-    background: #88848a;
+    background: var(--cinza-padrão);
     transform: scale(1.1);
 }
 .busca__titulo{
-    border-bottom: 1px solid #88848a;
+    border-bottom: 1px solid var(--cinza-padrão);
     width: 60%;
     margin:5% auto;
 }

@@ -28,7 +28,7 @@
         align-items: center;
     }
     .principalLeft__conteudo--input{
-        background: #9c9898;
+        background:var(--input-mobile);
     }
     .principalLeft__conteudo form{
         width: 80%;
