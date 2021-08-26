@@ -1,0 +1,31 @@
+insert into comentarios (id_usuario,id_post,comentario,data_comentario) values(2,2,'Html é uma lingaguem de estilização!','24/06/2021');
+
+
+ajax "FUNCIONANDO"
+
+function carregar_comentarios(comentario){
+    var page = "comentarios.php";
+    var i = comentario;
+    var div = "#exibe_comentarios"+i;
+
+    $.ajax({
+        type:'POST',
+        dataType:'html',
+        url: page,
+        beforeSend: function () {
+            $(`${div}`).html("Carregando...");
+        },
+        data: {comentario:comentario},
+        success: function(msg){
+            $(`${div}`).html(msg);
+        }
+    });
+}
+
+
+$("#bt_exibe_comentarios").click(function(){
+    carregar_comentarios($("#bt_exibe_comentarios").val())
+
+
+});
+

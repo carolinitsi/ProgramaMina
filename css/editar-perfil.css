@@ -1,0 +1,128 @@
+@font-face{
+    font-family:kiona;
+    src:url('fontes/Kiona.ttf');
+}
+fieldset{
+    border:none;
+}
+form fieldset legend{
+    font-size:14px;
+    font-family:kiona;
+    font-weight: bold;
+    padding: 20px;
+}
+.box-editar-usuario{
+    width: 40%;
+    margin-left: 30%;
+    background-color: #f4f4f4;
+    padding-top: 2.5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 2.5%;
+    margin-top: 10%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.box-editar-post{
+    width: 40%;
+    height: 60%;
+    margin-top: 5%;
+    margin-left: 30%;
+    background-color: white;
+    padding-top: 2.5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 2.5%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.box-editar-post fieldset{
+    height: 100%;
+    border:none;
+
+}
+.box-editar-post fieldset label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box-editar-post fieldset textarea{
+    height: 60%;
+    border:none;
+    background-color: rgb(248, 248, 248);
+    font-family:GeosansLight-Oblique;
+    font-size: 16px;
+    padding: 5%;
+}
+.box-editar-post fieldset input , .principal-right .formulario input {
+    height: 30px;
+    border:none;
+    background-color: rgb(238, 237, 237);
+    font-family:GeosansLight-Oblique;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.box-editar-post fieldset input[type=submit]{
+    background-color: #c74047;
+    color: #201424ce;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px 20px 20px 20px;
+    border:none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 1s all;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.box-editar-post fieldset input[type=submit]:hover{
+    background:#88848a;
+    cursor: pointer;
+}
+.imagem-perfil{
+    width:100px;
+    border-radius: 100%;
+    border: 20px solid #f4f4f4;
+    margin-left:50%;
+    margin-top: -100px;
+    position: absolute;
+}
+
+.box-editar-email input{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    border:1px solid grey;
+}
+.box-editar-senha,.box-editar-usuario form label{
+    color: #222122;
+    font-weight: bold;
+    font-size: 14px;
+    font-family:GeosansLight-Oblique;
+}
+.box-editar-senha input{
+    border-radius: 20px;
+    border:1px solid grey;
+    width: 20%;
+}
+
+.box-editar-senha form input{
+    width: 20%;
+    height: 30px;
+}
+.bt_secundario{
+    border-radius: 10px 20px 30px;
+    border: none;
+    padding: 5px;
+    background:#222122;
+    color: rgb(248, 234, 234);
+    width: 100px;
+    height: 30px;  
+    margin-top: 5%;
+    transition: 1s all;
+}
+.bt_secundario:hover{
+    background:#88848a;
+    cursor: pointer;
+}
+

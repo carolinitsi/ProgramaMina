@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap');
+
+@font-face{
+    font-family:kiona;
+    src:url('fontes/Kiona.ttf');
+}
+@font-face{
+    font-family:GeosansLight-Oblique;
+    src:url('fontes/GeosansLight-Oblique.ttf');
+}
+@font-face{
+    font-family:teste;
+    src:url('fontes/Fashion\ Fetish\ Small\ Caps.ttf');
+}
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+    }
+    @-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+    }
+    @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+html { 
+    scroll-behavior: smooth;
+}
+body{
+    margin-top:0px;
+    margin-left: 0px;
+    background-color: #fffbfb85;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    color: #222122;   
+}
+h1 span{
+    color: rgb(199, 64, 71);
+}
+h2,h3{
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+    text-align: center;
+}
+.fadeIn {
+    -webkit-animation: fadeIn 3s ease-in-out;
+    -moz-animation: fadeIn 3s ease-in-out;
+    -o-animation: fadeIn 3s ease-in-out;
+    animation: fadeIn 3s ease-in-out;
+    }
+
+
+.esconde{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    display: none;
+}
+/*BOTÕES----------------------------------------------------------------------*/
+.bt_padrao{
+    border-radius: 10px 20px 30px;
+    border: none;
+    padding: 5px;
+    background:#222122;
+    color: rgb(248, 234, 234);
+    width: 60px;
+    height: 30px;  
+    margin-top: 5%;
+    transition: 1s all;
+}
+.bt_padrao:hover{
+    background:#88848a;
+    cursor: pointer;
+}
+.bts_cabecalho{
+    height: 0px;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+    float: right;
+}
+.bt_editar_perfil{
+    background-color: transparent;
+    background-image: url("icones/config.png");
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+#bt_editar_perfil:hover{
+    width: 30px;
+    height: 30px;
+}
+.bt_sair{
+    background-color: transparent;
+    background-image: url("icones/login.png ");
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.bts_post{
+    float: right;
+    padding: 1%;
+}
+.bt_editar_post{
+    background-image: url("icones/editar.png ");    
+}
+.bt_editar_post:hover{
+    background-image: url("icones/editar-hover.png ");
+    cursor: pointer;
+}
+.bt_deletar_post{
+    background-image: url("icones/excluir.png ");
+}
+.bt_deletar_post:hover{
+    background-image: url("icones/excluir-hover.png ");
+    cursor: pointer;
+}
+.bt_padrao--grande{
+    margin-top: 2%;
+    height: 50px;
+    width: 100%;
+    border:none;
+    border-radius: 20px;
+    background:#c74047;
+    color: white;
+    font-family:GeosansLight-Oblique;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 0;
+    transition: 1s all;
+    cursor: pointer;
+}
+.bt_padrao--grande:hover{
+    background: #88848a;
+    transform: scale(1.1);
+}
+.busca__titulo{
+    border-bottom: 1px solid #88848a;
+    width: 60%;
+    margin:5% auto;
+}
+
+.modal_conteudo form{
+    padding:10%;
+}
+

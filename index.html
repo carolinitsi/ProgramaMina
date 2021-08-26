@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>ProgramaMina</title>
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        <link rel="stylesheet" type="text/css" href="css/modal.css">
+        <link rel="stylesheet" type="text/css" href="css/estilo-posts.css">
+        <link rel="stylesheet" type="text/css" href="css/cabecalho.css">
+        <link rel="stylesheet" type="text/css" href="css/rodape.css">
+        <link rel="stylesheet" type="text/css" href="css/slider.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="sortcut icon" type="image/x-icon" href="css/icones/pc.png">
+    </head>
+<body class="fadeIn" onload="slide1()" >
+    <header class="header" id="header">
+        <div class="principalLeft">
+            <div class="principalLeft__conteudo">
+                <h1> Programa<span>mina</span></h1>
+                <form action="crud/realiza_busca.php" method="POST">
+                    <input type="text" class="principalLeft__conteudo--input" name="pesquisa" placeholder="Digite aqui sua pesquisa..." />
+                    <input type="submit" class="principalLeft__conteudo--bt"name="pesquisar" value="">
+                </form>
+                <div class="principal-left-conteudo-bt">
+                    <button id="" class="bt_chama_modal" type="submit">Nova aqui? Clique aqui e faça parte dessa comunidade!</button>            
+                    <a href="php/login.php"> Login </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="principalRight">
+            <img class="principalRight__imagem" src="css/imagens/cabecalho-2.png">
+        </div>          
+    </header> 
+    <section class="introducao" >
+        <h2>Junte-se a nós!</h2>
+        <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+    </section>
+    <section class="slider">
+        <div class="" id="banner1">
+                <img src="css/imagens/slider1.jpg" width="100%" >
+                <p> Encontre <span>mulheres</span> da área tech e faça novas amizades!</p>
+            </div>  
+        </div>
+        <div class="" id="banner2">
+            <img src="css/imagens/slider2.jpg" width="100%" >
+            <p> Divulgue seus <span>conhecimentos</span> para auxiliar e tirar dúvidas de outras usuárias!</p>
+        </div>  
+        </div>
+        <div class="" id="banner3">
+            <img src="css/imagens/slider3.jpg" width="100%" >
+            <p>Faça parte de uma <span>comunidade</span> disposta a alavancar sua carreira!</p>
+            </div>  
+        </div>
+
+    </section>  
+    <section class="convite" >
+        <h2>Lugar de mulher é na tecologia!</h2>
+        <a href="#header" class="">Cadastre-se</a>           
+    </section> 
+    <footer class="rodape">
+        <div class="rodape__mensagem" id="secao-contato">
+            <form action="crud/logica_usuario.php" method="post"> 
+                <h2>Contate-nos:</h2>
+                <label for="email_remetente">Email: </label>
+                <input class="rodade__email" type="text" name="email_remetente" id="email_remetente" placeholder="    seuemail@gmail.com">
+                <label for="mensagem">Mensagem: </label>
+                <textarea class="rodape__mensagem" type="text" name="mensagem" id="mensagem" placeholder="   Insira sua mensagem"></textarea></br>
+                <input class="bt_padrao--grande" type="submit" id='enviar' name='enviar' value="Enviar">           
+            </form>
+        </div> <br> 
+        <div class="lista_usuarias">
+            <?php include_once("users.php");?>  
+        </div>
+        <p class="copyright"> &copy; Copyright ProgramaMina 2021</p>
+    </footer>
+   
+   
+    <div id="modal_fundo" class="modal_fundo_style">
+        <div class="modal_conteudo">
+           <button class="fechar">X</button>
+                <form action="crud/logica_usuario.php" method="post" enctype="multipart/form-data"> 
+                    <h2>Cadastrar:</h2>  
+                    <label for="email">Email: </label>
+                    <input type="email" required class="email" id="email" name="email" placeholder="email">
+                    <label for="senha">Senha: </label>
+                    <input type="password" required minlength="4" class="senha"  id="senha" name="senha" placeholder="senha">
+                    <input type="file" required  class="" id="file" name="file">
+                    <input type="submit" class="bt-2" id="cadastrar" name="cadastrar" value="Cadastrar">           
+                </form>
+        </div>
+    </div>
+    <script src="js/slider.js" ></script>
+<script>
+            
+    var chamamodal = document.querySelector('.bt_chama_modal');
+        chamamodal.addEventListener('click', function(){
+                Modal('modal_fundo');
+             });
+    var Fechamodal = document.querySelector('.fechar');
+       Fechamodal.addEventListener('click', function(){
+                fechaModal('modal_fundo');
+             });
+        
+    function Modal(modalID){
+                var modal = document.getElementById(modalID);
+                modal.classList.add('mostrar');
+            }   
+    function fechaModal(modalID){
+                var modal = document.getElementById(modalID);
+                modal.classList.remove('mostrar');
+            }
+        
+</script>

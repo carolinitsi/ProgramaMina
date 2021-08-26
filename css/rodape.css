@@ -1,0 +1,58 @@
+.rodape{
+    background:#222122;
+    height: 500px;
+    display: grid;
+    grid-template-areas: 
+        "formulario"
+        "usuarias"
+        "copyright";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 450px 50px 0px;
+    padding: 5%;
+    margin-top: 100px;
+}
+form label{
+    color:#b8b8b8;
+    font-family:kiona;
+    margin-bottom: 15px;
+}
+.rodape__mensagem form{
+    width: 80%;
+    float: left;
+    margin:5%;
+    box-sizing: border-box;
+    grid-area: formulario;
+    grid-column: 1/1;
+}
+.rodade__email, .rodape__mensagem{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px 20px 30px 40px;
+    border: none;
+    margin-top: 2%;
+}
+.lista_usuarias{
+    width: 100%;
+    margin: 5%;
+    box-sizing: border-box;
+    grid-area: formulario;
+    grid-column: 2/2;
+    flex-wrap: wrap;
+}
+.lista_usuarias img{
+    width: 50px;
+    height: 50px;
+    border-radius: 0px; 
+}
+.copyright{
+    color: rgb(214, 212, 205);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    grid-area: copyright;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+
+

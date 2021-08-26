@@ -1,0 +1,72 @@
+/**/
+@media only screen and (max-device-width: 700px) {
+    main{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1{
+        font-size: 90px;
+    }
+    .header{
+        width: 80%;
+        display: flex;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    .principalRight{
+        opacity: 15%;
+    }
+    .principalLeft{
+        position: absolute;
+        width: 80%;
+    }
+    .principalLeft__conteudo{
+        width: 100%;
+        float: none;
+        margin-top: 10%;
+        align-items: center;
+    }
+    .principalLeft__conteudo--input{
+        background: #9c9898;
+    }
+    .principalLeft__conteudo form{
+        width: 80%;
+    }
+    .principalLeft__conteudo--subtitulo{
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 0px;
+    }
+    
+    .secaoPrincipal__post{
+        width: 100%;
+    }
+    .secao_lista--post{
+        flex-direction: column;
+    }
+    .boxpostIndividual{
+        width: 90%;
+        padding: 5%;
+        height: auto;
+    }
+    .user{
+        width: 60px;
+    }
+    .p_post {
+        font-size: 14px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .rodape__mensagem form{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .lista_usuarias{
+        display: none;
+    }
+}

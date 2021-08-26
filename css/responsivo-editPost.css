@@ -1,0 +1,20 @@
+@media only screen and (max-device-width: 700px) {
+    .conteudoEditar{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10%;
+        padding:0%;
+    }
+    .conteudoEditar_form label{
+        font: 14px;
+    }
+    .conteudoEditar_post{
+        height: 80%;
+    }
+    .conteudoEditar_assunto{
+        height: 50px;
+    }
+    .bt_padrao--grande{
+        height:60px;
+    }
+}
