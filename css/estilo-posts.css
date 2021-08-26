@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import 'styleGuide.css';
 /* SEÇÃO INTEIRA------------------------------------------------------------------*/
 .secaoPrincipal{
     width: 100%;
@@ -8,7 +7,7 @@
 }
 .p-comentario{
     font-size: 16px;
-    color:rgb(143, 120, 120);
+    color:var(--cinza-comentário);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 14px;  
 }
@@ -31,13 +30,13 @@
     padding-bottom: 5%;
     padding-left: 2%;
     padding-right: 2%;
-    box-shadow: 0.4em 0.4em 0.4em rgb(138, 138, 137);
+    box-shadow: 0.4em 0.4em 0.4em var(--cinza-sombra);
     border-radius: 5px;
     margin: 10px;
-    background-color: powderblue;
+    background-color: var(--azul-box);
 }
 .boxpostIndividual:nth-child(odd){
-    background-color: #f4f4f4;
+    background-color: var( --branco-inpput);
 }
 .boxpostIndividual_flex{
     display: flex;
@@ -50,7 +49,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: solid 1px #a8b7c9;
+    border-bottom: solid 1px var(--cinza-padrão);
 }
 .boxpostIndividual__cabecalho--foto{
     border-radius: 100%;
@@ -65,11 +64,11 @@
     flex-grow: 1;
 }
 .boxpostIndividual__cabecalho--data{
-    border-bottom: 1px solid #cacacaa4;
+    border-bottom: 1px solid var(--cinza-padrão);
     font-family:GeosansLight-Oblique ;
     font-size: 12px;
     font-weight: bold;
-    color:#86858ab9;
+    color:var(--cinza-padrão);
     padding-left: 50%;
     flex-grow: 1;
     height: 20px;
@@ -77,14 +76,14 @@
 
 .secaoPrincipal__post--assunto{
     border-radius: 10px 20px 30px;
-    border: solid 1px gray;
+    border: solid 1px var(--cinza-padrão);
     margin-bottom: 5px;
 }
 .secaoPrincipal__post--post{
     width: 100%;
     height: 100px;
     border-radius: 10px 20px 30px 40px;
-    border: solid 1px gray;
+    border: solid 1px var(--cinza-padrão);
     font-family: Arial, Helvetica, sans-serif;
     padding: 5px 20px;
 }
@@ -94,7 +93,7 @@
 }
 
 .secao_posts.pesquisa{
-    background-color: rgb(236, 235, 235);
+    background-color: #ecebeb;
     padding: 2%;
     box-shadow:  2px 2px #86858ab9;
     border-radius: 5%;
@@ -113,7 +112,7 @@
 .input_comentario{
     width: 90%;
     border-radius: 10px 20px 30px 40px;
-    border: solid 1px #dad9d9;
+    border: solid 1px var(--branco-inpput);
     background-color: rgb(255 250 255 / 96%);
     padding: 4px;
 }
@@ -131,7 +130,7 @@
 .bt_comentarios, .bt_esconde_comentarios{
     background-color: transparent;
     background-size: cover;
-    color: #8f7878;
+    color: var(--cinza-comentário);
     font-size: 12px;
     width: auto;
     height: 20px;
@@ -141,7 +140,7 @@
 }
 .bt_comentarios:hover{
     cursor: pointer;
-    color: rgb(143, 120, 120);
+    color: var(--cinza-comentário);
     
 }
 .bt_editar_post, .bt_deletar_post, .bt-comentar{
@@ -158,7 +157,6 @@
 .box-comentario-individual{
     width: 100%;
     height: auto;
-    background: rgb(235, 230, 235);
 }
 .box-comentario-individual.esconde{
     display: none;
@@ -170,8 +168,8 @@
     position: relative;
     transition: height 2s;
     transition-timing-function: ease;
-    box-shadow: 0.4em 0.4em 0.4em rgb(138, 138, 137);
-    background: #f1eaeb;
+    box-shadow: 0.4em 0.4em 0.4em var(--cinza-sombra);
+    background: var(--branco-padrão);
     border-radius: 20px;
     padding: 2%;
     display: flex;

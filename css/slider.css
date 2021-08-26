@@ -6,7 +6,7 @@
     justify-content: space-between;
     width: 80%;
     height: 400px;
-    background: #fffbfbfd;
+    background: var(--branco-fundo);
     margin: 10% auto;
     
 }
@@ -17,7 +17,7 @@
     text-align: center;
 }
 .slider p span{
-    color: crimson;
+    color: var(--vermelho-padrão);
 }
 .ativo{
     height: 350px;

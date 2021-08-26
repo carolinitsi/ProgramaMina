@@ -1,0 +1,25 @@
+:root {
+    --azul-box:#b0e0e6;
+    --branco-fundo: #fffbfb85;
+    --branco-padrão:#f8eaea;
+    --branco-inpput:#F4F4F4;
+    --input-mobile:#ceb2b2;
+    --cinza-padrão:#88848a;
+    --cinza-sombra:#8a8a89;
+    --cinza-comentário:#8f7878;
+    --preto-padrão:#222122;
+    --preto-transparente:#2221229a;
+    --vermelho-padrão:#c74047;
+
+
+    /*Comentários*/
+
+  }
+  
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face{
+    font-family:kiona;
+    src:url('fontes/Kiona.ttf');
+}
