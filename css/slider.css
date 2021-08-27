@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap');
 
 .slider{
     display: flex;
@@ -28,10 +27,5 @@
     opacity: 20%;
     width: 20%;
     height: 300px;
-    transition: 6s all;
-}
-
-#banner1{
-    background-repeat: no-repeat;
-    background-size: cover;
+    transition: 4s all;
 }

@@ -75,8 +75,9 @@
         
         <p class="copyright"> &copy; Copyright ProgramaMina 2021</p>
     </footer>
-   
-   
+
+    <!------------------------------------- MODAL ------------------------------------------------------------>
+
     <div id="modal_fundo" class="modal_fundo_style">
         <div class="modal_conteudo">
            <button class="fechar">X</button>
@@ -92,24 +93,5 @@
         </div>
     </div>
     <script src="js/slider.js" ></script>
-<script>
-            
-    var chamamodal = document.querySelector('.bt_chama_modal');
-        chamamodal.addEventListener('click', function(){
-                Modal('modal_fundo');
-             });
-    var Fechamodal = document.querySelector('.fechar');
-       Fechamodal.addEventListener('click', function(){
-                fechaModal('modal_fundo');
-             });
-        
-    function Modal(modalID){
-                var modal = document.getElementById(modalID);
-                modal.classList.add('mostrar');
-            }   
-    function fechaModal(modalID){
-                var modal = document.getElementById(modalID);
-                modal.classList.remove('mostrar');
-            }
-        
-</script>
+    <script src="Js/modal.js"></script>
+</body>
