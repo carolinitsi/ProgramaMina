@@ -11,5 +11,5 @@
  
  
  ## Tela inicial 
- 
- <img src="https://user-images.githubusercontent.com/60903342/131006764-92a85e61-6627-4064-82b7-ba07be1751db.png" width="400"/><img src="https://user-images.githubusercontent.com/60903342/131009571-e5f82474-595b-4066-9e2a-9e43d20ff29c.png" width="400"/>
+
+ <img src="https://user-images.githubusercontent.com/60903342/131054396-2005b04f-bb2e-4bf4-9e4c-1569816ffa00.png" width="400"/><img src="https://user-images.githubusercontent.com/60903342/131009571-e5f82474-595b-4066-9e2a-9e43d20ff29c.png" width="400"/>
