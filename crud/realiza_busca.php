@@ -30,9 +30,6 @@
                                 </li>
                                 <li style="list-style-type:none;"><h3 class="boxpostIndividual__cabecalho--titulo"><?php echo $usuario['assunto']; ?></h3></li> 
                             </ul>
-                            <span style="list-style-type:none;" class="boxpostIndividual__cabecalho--data">
-                                <?php echo $usuario['data_post']; ?>
-                            </span>
                         </div>   
         
                         <p class="p_post"><?php echo $usuario['post']; ?></p>

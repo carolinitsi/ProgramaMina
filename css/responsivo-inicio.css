@@ -50,6 +50,9 @@
         padding: 5%;
         height: auto;
     }
+    .boxpostIndividual__cabecalho--titulo {
+        font-size: 30px;
+    }
     .user{
         width: 60px;
     }

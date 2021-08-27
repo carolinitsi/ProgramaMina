@@ -110,7 +110,7 @@
     background:var(--branco-inpput);
 }
 .principalLeft__conteudo--input::placeholder{
-    color: var(--branco-padrão);
+    color: var(--cinza-padrão);
     letter-spacing: 3px;
     text-align: center;
     font-size: 14px;

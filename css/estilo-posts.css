@@ -55,10 +55,10 @@
     border-radius: 100%;
 }
 .boxpostIndividual__cabecalho--titulo{
-    color:rgb(66 66 66);
+    color:var(--cinza-padrão);
     height: 25px;
     padding-top: 5px;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     flex-grow: 1;
@@ -88,7 +88,8 @@
     padding: 5px 20px;
 }
 .p_post{
-    font-size: 10px;
+    font-size: 14px;
+    color: var(--cinza-padrão);
     font-family: 'Poppins', sans-serif;
 }
 

@@ -173,7 +173,6 @@ if (isset($_POST['enviar']))
     $assunto = ['Contato'];
 
     enviacontato($email_destinatario, $email_remetente, $mensagem, $assunto);
-    echo "<script> document.getElementById('secao-contato').focus();</script>";
     header('location:../php/inicio.php');
 
 }
